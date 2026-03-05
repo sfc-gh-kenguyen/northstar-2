@@ -76,13 +76,22 @@ with right:
         """.strip()
     )
 
-    st.subheader("Rules (same as your script)")
+    st.subheader("Rules")
     st.markdown(
         """
 - **Format your name correctly** (no all-lowercase / no all-uppercase).
 - **No middle name?** Use an empty string: `''`.
 - **Email must match** what they used to register.
         """.strip()
+    )
+
+    st.subheader("Badge Support")
+    st.info(
+        "Learners can email **developer-badges-DL@snowflake.com** if you want to inquire "
+        "about a missing badge. Badges will be sent within 7 business days of the event. "
+        "We can only support learners if inquired within 30 days of the event. "
+        "After 30 days, we cannot guarantee support.",
+        icon="📧",
     )
 
 if not submitted:
