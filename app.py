@@ -59,6 +59,8 @@ with left:
 
         submitted = st.form_submit_button("Generate SQL", type="primary")
 
+    error_container = st.container()
+
 with right:
     st.subheader("Instructions")
     st.markdown(
@@ -126,8 +128,9 @@ if not last:
     errors.append("Last name is required.")
 
 if errors:
-    for e in errors:
-        st.error(e)
+    with error_container:
+        for e in errors:
+            st.error(e)
     st.stop()
 
 name_case_errors: list[str] = []
@@ -148,8 +151,9 @@ if looks_like_bad_name_case(last):
     name_case_errors.append("Last name cannot be all lowercase or all uppercase.")
 
 if name_case_errors:
-    for e in name_case_errors:
-        st.error(e)
+    with error_container:
+        for e in name_case_errors:
+            st.error(e)
     st.stop()
 
 single_char_msg = "A single character is not allowed, please input a space after to proceed."
@@ -163,8 +167,8 @@ if len(last) == 1 and not last.islower() and not is_allowed_single_initial(last_
     single_char_errors.append(single_char_msg)
 
 if single_char_errors:
-    # Show the message once (even if multiple fields triggered it).
-    st.error(single_char_msg)
+    with error_container:
+        st.error(single_char_msg)
     st.stop()
 
 greeting_call_sql = (
