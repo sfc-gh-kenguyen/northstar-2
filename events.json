@@ -1,13 +1,5 @@
 [
   {
-    "Event Name": "Melbourne (04/13/2026)",
-    "Final URL": "http://signup.snowflake.com/?k=snowflake-ai-linkedin&t=5a798df87df032d830c164a792c104767dba56c231a2b9bc3f0e434793f629c6"
-  },
-  {
-    "Event Name": "Tasmania (04/14/2026)",
-    "Final URL": "https://signup.snowflake.com/?trial=student&cloud=aws&region=us-west-2&utm_source=workshop&utm_campaign=northstar-2026&k=hol-snowflake-6023&t=4499f4a140ed0f813279bbf47e9ec4822acd83e75f146dd57d2a8010a341cde0"
-  },
-  {
     "Event Name": "Australia Virtual D4B (4/16-17)",
     "Final URL": "https://signup.snowflake.com/?trial=student&cloud=aws&region=us-west-2&utm_source=workshop&utm_campaign=northstar-2026&k=hol-snowflake-1616&t=d063cbe92edcb7508a9543ffb376d582a0ca03ca67c769390766955e45a3f19c"
   },
@@ -44,11 +36,15 @@
     "Final URL": "https://signup.snowflake.com/?trial=student&cloud=aws&region=us-west-2&utm_source=workshop&utm_campaign=northstar-2026&k=hol-snowflake-5204&t=3850f137b4b25ad1dee1d89da46f8a3a2efdeacb2eb8e9d95b061104e143b6e2"
   },
   {
-    "Event Name": "Pan-EMEA (5/13/2026)",
-    "Final URL": "https://signup.snowflake.com/?trial=student&cloud=aws&region=us-west-2&utm_source=workshop&utm_campaign=northstar-2026&k=hol-snowflake-1301&t=5c299b98f1acbf2bd392e44c3fc92a8983854945f55205cb85311db4b7e52ca6"
-  },
-  {
     "Event Name": "Bengaluru/Virtual (5/8/2026)",
     "Final URL": "https://signup.snowflake.com/?trial=student&cloud=aws&region=us-west-2&utm_source=workshop&utm_campaign=northstar-2026&k=hol-snowflake-8891&t=fe9c0af6044df936cb3221bb134080d6dbaa48f2fed2bc78b84a7f50805e0178"
+  },
+  {
+    "Event Name": "Nagoya (5/12/2026)",
+    "Final URL": "https://signup.snowflake.com/?trial=student&cloud=aws&region=us-west-2&utm_source=workshop&utm_campaign=northstar-2026"
+  },
+  {
+    "Event Name": "Pan-EMEA (5/13/2026)",
+    "Final URL": "https://signup.snowflake.com/?trial=student&cloud=aws&region=us-west-2&utm_source=workshop&utm_campaign=northstar-2026&k=hol-snowflake-1301&t=5c299b98f1acbf2bd392e44c3fc92a8983854945f55205cb85311db4b7e52ca6"
   }
 ]
