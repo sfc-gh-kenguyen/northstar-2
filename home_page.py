@@ -1,5 +1,12 @@
 import streamlit as st
 
+# Home.py calls init_app() then loads this file via st.navigation — do not init again
+# (duplicate selectbox key "selected_event"). Backup Cloud entry uses home_page.py alone.
+if not st.session_state.get("_northstar_nav_root"):
+    from app_bootstrap import init_app
+
+    init_app()
+
 st.title("❄️ Snowflake Northstar")
 
 st.markdown(
@@ -20,6 +27,18 @@ with col2:
     st.subheader("⚙️ Auto-Grader")
     st.markdown("Generate your auto-grader SQL script.")
     st.page_link("pages/3_Auto-Grader.py", label="Go to Auto-Grader", icon="➡️")
+
+st.divider()
+
+c3, c4 = st.columns(2)
+with c3:
+    st.subheader("🏅 Badge status")
+    st.markdown("Check the badging status of your event.")
+    st.page_link("pages/4_Badge_Status.py", label="Go to Badge status", icon="➡️")
+with c4:
+    st.subheader("📚 Guides & answer keys")
+    st.markdown("Workshop guides and answer key scripts.")
+    st.page_link("pages/2_Guides_and_Answer_Keys.py", label="Go to Guides & Answer Keys", icon="➡️")
 
 st.divider()
 

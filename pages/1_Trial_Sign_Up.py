@@ -5,7 +5,9 @@ EVENTS = load_events()
 
 st.title("📝 Trial Sign Up")
 
-event = st.session_state.selected_event
+if "selected_event" not in st.session_state:
+    st.session_state.selected_event = "None"
+event = st.session_state["selected_event"]
 if not event or event == "None":
     st.warning("Please select your event from the sidebar to see the trial signup link.", icon="⚠️")
     st.stop()
