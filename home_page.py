@@ -1,8 +1,11 @@
 import streamlit as st
 
-from app_bootstrap import init_app
+# Home.py calls init_app() then loads this file via st.navigation — do not init again
+# (duplicate selectbox key "selected_event"). Backup Cloud entry uses home_page.py alone.
+if not st.session_state.get("_northstar_nav_root"):
+    from app_bootstrap import init_app
 
-init_app()
+    init_app()
 
 st.title("❄️ Snowflake Northstar")
 

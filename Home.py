@@ -3,6 +3,7 @@ import streamlit as st
 from app_bootstrap import init_app
 
 init_app()
+st.session_state["_northstar_nav_root"] = True
 
 pages = [
     st.Page("home_page.py", title="Home", icon="❄️", default=True),
