@@ -1,49 +1,49 @@
+from __future__ import annotations
+
 import streamlit as st
 
 from events import load_event_records
 
 st.title("🏅 Badge status")
 
-if "selected_event" not in st.session_state:
-    st.session_state.selected_event = "None"
+st.caption(
+    "Badge sending is updated from the workshop roster. "
+    "**Issued** = emails have gone out; **Not issued yet** = still within the usual window; "
+    "**Not published** = the team has not set a status for this row yet."
+)
 
-event = st.session_state["selected_event"]
+
+def _status_label(v: bool | None) -> str:
+    if v is True:
+        return "Issued"
+    if v is False:
+        return "Not issued yet"
+    return "Not published"
+
+
 records = load_event_records()
-
-if not event or event == "None":
-    st.warning("Select your event in the sidebar to see badge status.", icon="⚠️")
+if not records:
+    st.info("No events are configured yet.", icon="ℹ️")
     st.stop()
 
-if event not in records:
-    st.error("That event is not in the list. Check the spelling or contact your workshop host.")
-    st.stop()
+rows = [
+    {"Event": name, "Badge status": _status_label(rec["badges_issued"])}
+    for name, rec in sorted(records.items(), key=lambda x: x[0].lower())
+]
 
-status = records[event]["badges_issued"]
-
-st.subheader(event)
-
-if status is True:
-    st.success(
-        "**Badges have been issued** for this event. "
-        "Check the email you used for your Snowflake trial (and spam/junk).",
-        icon="✅",
-    )
-elif status is False:
-    st.info(
-        "**Badges are not issued yet** for this event. "
-        "They are typically sent within **7 business days** after the workshop.",
-        icon="🕐",
-    )
-else:
-    st.warning(
-        "**Status not published yet.** "
-        "Your Snowflake team will update this page when badge sending has started or completed. "
-        "Check again later.",
-        icon="📋",
-    )
+st.dataframe(
+    rows,
+    hide_index=True,
+    use_container_width=True,
+    column_config={
+        "Event": st.column_config.TextColumn("Event", width="large"),
+        "Badge status": st.column_config.TextColumn("Badge status", width="small"),
+    },
+)
 
 st.divider()
 st.markdown(
+    "If badges are **issued**, check the email you used for your Snowflake trial (including spam/junk). "
     "Questions about a missing badge? Email **developer-badges-DL@snowflake.com** "
     "(preferably within **30 days** of your event)."
 )

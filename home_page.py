@@ -33,7 +33,7 @@ st.divider()
 c3, c4 = st.columns(2)
 with c3:
     st.subheader("🏅 Badge status")
-    st.markdown("See whether badges have been issued for your event yet.")
+    st.markdown("Table of all events and whether badges have been issued yet.")
     st.page_link("pages/4_Badge_Status.py", label="Go to Badge status", icon="➡️")
 with c4:
     st.subheader("📚 Guides & answer keys")
