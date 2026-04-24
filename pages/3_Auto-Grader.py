@@ -35,25 +35,6 @@ def normalize_space(value: str) -> str:
     return re.sub(r"\s+", " ", (value or "").strip())
 
 
-def looks_like_bad_name_case(value: str) -> bool:
-    v = normalize_space(value)
-    letters = [ch for ch in v if ch.isalpha()]
-    # Only enforce the casing rule for multi-letter names.
-    # (A single-letter initial shouldn't be blocked by the all-upper/all-lower rule.)
-    if len(letters) <= 1:
-        return False
-    return all(ch.islower() for ch in letters) or all(ch.isupper() for ch in letters)
-
-def is_allowed_single_initial(raw_value: str) -> bool:
-    """
-    Allow a single uppercase initial *only* when the user includes a trailing space,
-    e.g. 'K ' (common workaround for badge-matching quirks).
-    """
-
-    if raw_value is None:
-        return False
-    return re.fullmatch(r"[A-Z]\s+", raw_value) is not None
-
 st.divider()
 
 left, right = st.columns([1.1, 1])
@@ -90,9 +71,8 @@ with right:
     st.subheader("Rules")
     st.markdown(
         """
-- **Format your name correctly** (no all-lowercase / no all-uppercase).
-- **No middle name?** Keep blank.
-- **Email must match** what you used to register.
+- **No middle name?** Leave the field blank.
+- **Email must match** what you used to register for the event.
         """.strip()
     )
 
@@ -102,15 +82,12 @@ if not submitted:
 
 email = normalize_space(email)
 
-# Keep both raw + normalized variants:
-# - raw is used for the "single character" check (so users can follow the instruction to add a trailing space)
-# - normalized is used for SQL + other validation
+# Normalized values for required / quote-only checks; raw strings go into SQL (preserves spacing).
 first = normalize_space(first_raw)
 middle = normalize_space(middle_raw)
 last = normalize_space(last_raw)
 
-# For SQL generation, preserve the user's original input (including trailing spaces),
-# because some workshop badge workflows rely on that exact value.
+# Preserve original input in SQL (including intentional spacing).
 first_sql = first_raw or ""
 middle_sql = middle_raw or ""
 last_sql = last_raw or ""
@@ -136,44 +113,6 @@ if errors:
     with error_container:
         for e in errors:
             st.error(e)
-    st.stop()
-
-name_case_errors: list[str] = []
-# Special case: a single lowercase initial (even with spaces in raw input, e.g. "k ")
-# should report the "no all lowercase" error instead of the single-character message.
-if len(first) == 1 and first.islower():
-    name_case_errors.append("First name cannot be all lowercase or all uppercase.")
-if middle_raw and len(middle) == 1 and middle.islower():
-    name_case_errors.append("Middle name cannot be all lowercase or all uppercase.")
-if len(last) == 1 and last.islower():
-    name_case_errors.append("Last name cannot be all lowercase or all uppercase.")
-
-if looks_like_bad_name_case(first):
-    name_case_errors.append("First name cannot be all lowercase or all uppercase.")
-if middle and looks_like_bad_name_case(middle):
-    name_case_errors.append("Middle name cannot be all lowercase or all uppercase.")
-if looks_like_bad_name_case(last):
-    name_case_errors.append("Last name cannot be all lowercase or all uppercase.")
-
-if name_case_errors:
-    with error_container:
-        for e in name_case_errors:
-            st.error(e)
-    st.stop()
-
-single_char_msg = "A single character is not allowed, please input a space after to proceed."
-single_char_errors: list[str] = []
-# Reject single-character names even if the user tries to add spaces (e.g. "a " -> "a").
-if len(first) == 1 and not first.islower() and not is_allowed_single_initial(first_raw):
-    single_char_errors.append(single_char_msg)
-if middle_raw and len(middle) == 1 and not middle.islower() and not is_allowed_single_initial(middle_raw):
-    single_char_errors.append(single_char_msg)
-if len(last) == 1 and not last.islower() and not is_allowed_single_initial(last_raw):
-    single_char_errors.append(single_char_msg)
-
-if single_char_errors:
-    with error_container:
-        st.error(single_char_msg)
     st.stop()
 
 greeting_call_sql = (
@@ -231,7 +170,6 @@ as 'https://awy6hshxy4.execute-api.us-west-2.amazonaws.com/dev/edu_dora/greeting
 
 
 -- Be sure to follow the rules your session leader presents
--- Format your name CORRECTLY (do not use all lower case)
 -- If you do not have a middle name, use an empty string '' ; do not use "null" in place of any values
 -- Double-check your email. You must use the same email for the greeting as you used to register
 {greeting_call_sql}
