@@ -1,10 +1,5 @@
 [
   {
-    "Event Name": "Nagpur (4/25/2026)",
-    "Final URL": "https://signup.snowflake.com/?trial=student&cloud=aws&region=us-west-2&utm_source=workshop&utm_campaign=northstar-2026",
-    "Archived": false
-  },
-  {
     "Event Name": "Pan-EMEA (4/29/2026)",
     "Final URL": "https://signup.snowflake.com/?trial=student&cloud=aws&region=us-west-2&utm_source=workshop&utm_campaign=northstar-2026",
     "Archived": false
@@ -119,6 +114,14 @@
     "Badges issued": true,
     "Event Date": "2026-04-23",
     "Issued Date": "2026-04-24",
+    "Archived": true
+  },
+  {
+    "Event Name": "Nagpur (4/25/2026)",
+    "Final URL": "https://signup.snowflake.com/?trial=student&cloud=aws&region=us-west-2&utm_source=workshop&utm_campaign=northstar-2026",
+    "Badges issued": true,
+    "Event Date": "2026-04-26",
+    "Issued Date": "2026-04-29",
     "Archived": true
   }
 ]
