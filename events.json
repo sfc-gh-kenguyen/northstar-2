@@ -45,6 +45,11 @@
     "Archived": false
   },
   {
+    "Event Name": "Test",
+    "Final URL": null,
+    "Archived": false
+  },
+  {
     "Event Name": "Melbourne (04/13/2026)",
     "Final URL": "http://signup.snowflake.com/?k=snowflake-ai-linkedin&t=5a798df87df032d830c164a792c104767dba56c231a2b9bc3f0e434793f629c6",
     "Badges issued": false,
