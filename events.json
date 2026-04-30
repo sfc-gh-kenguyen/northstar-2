@@ -125,9 +125,9 @@
   {
     "Event Name": "Auckland (4/29/2026)",
     "Final URL": "https://signup.snowflake.com/?trial=student&cloud=aws&region=us-west-2&utm_source=workshop&utm_campaign=northstar-2026&k=hol-snowflake-5204&t=3850f137b4b25ad1dee1d89da46f8a3a2efdeacb2eb8e9d95b061104e143b6e2",
-    "Badges issued": false,
+    "Badges issued": true,
     "Event Date": "2026-04-29",
-    "Issued Date": null,
+    "Issued Date": "2026-04-30",
     "Archived": true
   }
 ]
