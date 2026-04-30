@@ -18,7 +18,7 @@ from events import load_events
 
 
 def init_app() -> None:
-    # set_page_config must run at most once per session; sidebar/widgets must run every rerun.
+    # set_page_config must run at most once per session; this function runs every rerun.
     if "_northstar_page_config" not in st.session_state:
         st.set_page_config(page_title="Snowflake Northstar", page_icon="❄️", layout="wide")
         st.session_state._northstar_page_config = True
@@ -38,9 +38,3 @@ def init_app() -> None:
                 name = unquote_plus(val)
                 if name in events:
                     st.session_state.selected_event = name
-
-    with st.sidebar:
-        sel = st.session_state.get("selected_event", "None")
-        if sel and sel != "None":
-            st.caption(f"Event: **{sel}**")
-            st.page_link("pages/1_Trial_Sign_Up.py", label="Change event", icon="📝")
