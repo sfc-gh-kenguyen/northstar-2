@@ -1,0 +1,108 @@
+{
+  "bundles": [
+    {
+      "workshop_match": "CoCo Foundations",
+      "title": "CoCo Foundations lab files",
+      "note": "The Snowflake guide links to GitHub assets in Snowflake-Labs/sfquickstarts that are temporarily unavailable. Download these files here instead of the guide's repo links.",
+      "groups": [
+        {
+          "title": "Lab setup (run in Snowsight before demos)",
+          "files": [
+            {
+              "name": "00_snowday_setup.sql",
+              "path": "lab_assets/coco-foundations/00_snowday_setup.sql",
+              "help": "Run first as SYSADMIN — creates COCO_WORKSHOP database, schemas, and warehouse."
+            },
+            {
+              "name": "00_sample_data.sql",
+              "path": "lab_assets/coco-foundations/00_sample_data.sql",
+              "help": "Run after setup — loads AP invoice source tables and evaluation data."
+            },
+            {
+              "name": "01_demo_reset.sql",
+              "path": "lab_assets/coco-foundations/01_demo_reset.sql",
+              "help": "Optional — drop demo objects and re-run the setup scripts above."
+            }
+          ]
+        },
+        {
+          "title": "Demo 2 — PRD sample files (save locally for CoCo)",
+          "files": [
+            {
+              "name": "sample_business_requirements_source_onboarding.csv",
+              "path": "lab_assets/coco-foundations/sample_business_requirements_source_onboarding.csv",
+              "help": "New source systems, owners, and go-live targets."
+            },
+            {
+              "name": "sample_business_requirements_column_mapping.csv",
+              "path": "lab_assets/coco-foundations/sample_business_requirements_column_mapping.csv",
+              "help": "Field-level mappings for new sources into the Silver schema."
+            },
+            {
+              "name": "sample_business_requirements_business_rules.csv",
+              "path": "lab_assets/coco-foundations/sample_business_requirements_business_rules.csv",
+              "help": "Business rules BR-001 through BR-010 for the PRD workflow."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "workshop_match": "From Zero to Agents",
+      "title": "From Zero to Agents lab files",
+      "note": "The Snowflake guide links to setup.sql and marketing_data.csv in Snowflake-Labs/sfquickstarts that are temporarily unavailable. Download them here instead.",
+      "groups": [
+        {
+          "title": "Environment setup",
+          "files": [
+            {
+              "name": "setup.sql",
+              "path": "lab_assets/from-zero-to-agents/setup.sql",
+              "help": "Run in a Snowsight SQL worksheet — creates roles, warehouse, database, and loads sample data."
+            },
+            {
+              "name": "marketing_data.csv",
+              "path": "lab_assets/from-zero-to-agents/marketing_data.csv",
+              "help": "Upload via Database Explorer when the guide reaches the Updating Marketing Data step."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "workshop_match": "Dynamic Tables",
+      "title": "Dynamic Tables lab files",
+      "note": "The Snowflake guide links to setup.sql in Snowflake-Labs/sfquickstarts that is temporarily unavailable. Copy the script below into Snowsight or download it here.",
+      "groups": [
+        {
+          "title": "Lab setup (run in Snowsight before the pipeline steps)",
+          "files": [
+            {
+              "name": "setup.sql",
+              "path": "lab_assets/dynamic-tables/setup.sql",
+              "help": "Run as ACCOUNTADMIN — creates warehouses, databases, UDTFs, and sample CUSTOMERS / PRODUCTS / ORDERS tables."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "workshop_match": "Building AI Applications with Snowflake Cortex",
+      "title": "RAG, Text-to-SQL & CoCo lab files",
+      "note": "The Snowflake guide links to a workshop notebook in Snowflake-Labs/sfquickstarts that is temporarily unavailable. Download the notebook here and upload it in Snowsight under Projects > Workspaces.",
+      "groups": [
+        {
+          "title": "Workshop notebook",
+          "files": [
+            {
+              "name": "accelerate-app-dev-cortex-code.ipynb",
+              "path": "lab_assets/accelerate-app-dev-cortex-code/accelerate-app-dev-cortex-code.ipynb",
+              "help": "Upload in Snowsight: Projects > Workspaces > + Add new > Upload files.",
+              "preview_sql": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
