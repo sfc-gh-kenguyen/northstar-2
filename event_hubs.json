@@ -1,0 +1,30 @@
+[
+  {
+    "event_name": "APAC Virtual (9/14/2026)",
+    "nav_title": "APAC Virtual — Day 1 (9/14)",
+    "page": "pages/5_APAC_Virtual_Day1.py",
+    "trial_split_by_instance": true,
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  },
+  {
+    "event_name": "APAC Virtual (9/15/2026)",
+    "nav_title": "APAC Virtual — Day 2 (9/15)",
+    "page": "pages/6_APAC_Virtual_Day2.py",
+    "trial_split_by_instance": true,
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  },
+  {
+    "event_name": "APAC Virtual (9/16/2026)",
+    "nav_title": "APAC Virtual — Day 3 (9/16)",
+    "page": "pages/7_APAC_Virtual_Day3.py",
+    "trial_split_by_instance": true,
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  },
+  {
+    "event_name": "APAC Virtual (9/17/2026)",
+    "nav_title": "APAC Virtual — Day 4 (9/17)",
+    "page": "pages/8_APAC_Virtual_Day4.py",
+    "trial_split_by_instance": true,
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  }
+]
