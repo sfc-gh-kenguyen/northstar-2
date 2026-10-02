@@ -1,0 +1,30 @@
+[
+  {
+    "event_name": "SWT Virtual APAC - Data Ingestion, Transformation, and Delivery with Snowflake (10/2/2026)",
+    "nav_title": "SWT Virtual APAC — Data Engineering (10/2)",
+    "page": "pages/5_SWT_Virtual_APAC_Ingestion.py",
+    "trial_split_by_instance": true,
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  },
+  {
+    "event_name": "SWT Virtual APAC - Build an Automated Data Pipeline with Snowpipe Streaming (10/2/2026)",
+    "nav_title": "SWT Virtual APAC — Snowpipe (10/2)",
+    "page": "pages/6_SWT_Virtual_APAC_Snowpipe.py",
+    "trial_split_by_instance": true,
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  },
+  {
+    "event_name": "SWT Virtual APAC - Building Intelligence Data Application with Snowflake CoWork (10/3/2026)",
+    "nav_title": "SWT Virtual APAC — CoWork (10/3)",
+    "page": "pages/7_SWT_Virtual_APAC_CoWork.py",
+    "trial_split_by_instance": true,
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  },
+  {
+    "event_name": "SWT Virtual APAC - Accelerate App Development with Snowflake CoCo\n (10/3/2026)",
+    "nav_title": "SWT Virtual APAC — RAG Apps (10/3)",
+    "page": "pages/8_SWT_Virtual_APAC_CoCo.py",
+    "trial_split_by_instance": true,
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  }
+]

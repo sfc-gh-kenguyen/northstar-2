@@ -1,0 +1,63 @@
+[
+  {
+    "Workshop": "Data Ingestion, Transformation, and Delivery with Snowflake",
+    "Guide URL": "https://www.snowflake.com/en/developers/guides/snowflake-northstar-data-engineering/",
+    "Answer Key URL": "https://github.com/Snowflake-Labs/builder-workshops/blob/main/data-eng/ingestion-transformation-delivery.sql",
+    "Guide link text": "View Guide",
+    "Answer Key link text": "View Answer Key"
+  },
+  {
+    "Workshop": "Build an Automated Data Pipeline with Snowpipe Streaming",
+    "Guide URL": "https://www.snowflake.com/en/developers/guides/getting-started-with-snowpipe/",
+    "Answer Key URL": "https://github.com/Snowflake-Labs/builder-workshops/blob/main/data-eng/snowpipe-streaming.sql",
+    "Guide link text": "View Guide",
+    "Answer Key link text": "View Answer Key"
+  },
+  {
+    "Workshop": "Building Intelligence Data Application with Snowflake CoWork",
+    "Guide URL": "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-intelligence/",
+    "Answer Key URL": "https://github.com/Snowflake-Labs/builder-workshops/blob/main/gen-ai/snowflake-intelligence.sql",
+    "Guide link text": "View Guide",
+    "Answer Key link text": "View Answer Key"
+  },
+  {
+    "Workshop": "Creating Declarative Data Pipelines with Dynamic Tables",
+    "Guide URL": "https://www.snowflake.com/en/developers/guides/create-declarative-data-pipelines-with-dynamic-tables/",
+    "Answer Key URL": "https://github.com/Snowflake-Labs/builder-workshops/blob/main/data-eng/dynamic-tables.sql",
+    "Guide link text": "View Guide",
+    "Answer Key link text": "View Answer Key"
+  },
+  {
+    "Workshop": "From Zero to Agents: Building End-to-End Data Pipeline for an AI Agent",
+    "Guide URL": "https://www.snowflake.com/en/developers/guides/from-zero-to-agents/",
+    "Answer Key URL": "https://github.com/Snowflake-Labs/builder-workshops/blob/main/gen-ai/zero-agent.sql",
+    "Guide link text": "View Guide",
+    "Answer Key link text": "View Answer Key"
+  },
+  {
+    "Workshop": "CoCo Foundations: Getting Started with CoCo",
+    "Guide URL": "https://www.snowflake.com/en/developers/guides/cortex-code-foundations/",
+    "Answer Key URL": "https://github.com/Snowflake-Labs/builder-workshops/blob/main/gen-ai/cortex-code-foundations.sql",
+    "Guide link text": "View Guide",
+    "Answer Key link text": "View Answer Key"
+  },
+  {
+    "Workshop": "Building AI Applications with Snowflake Cortex: RAG, Text-to-SQL & CoCo",
+    "Guide URL": "https://www.snowflake.com/en/developers/guides/accelerate-app-dev-cortex-code/",
+    "Answer Key URL": "https://github.com/Snowflake-Labs/builder-workshops/blob/main/gen-ai/ragapp.sql",
+    "Guide link text": "View Guide",
+    "Answer Key link text": "View Answer Key"
+  },
+  {
+    "Workshop": "Build an End-to-End Application Using CoCo on Snowflake",
+    "Guide URL": "https://www.snowflake.com/en/developers/guides/sfguide-build-end-to-end-ai-app-on-snowflake/",
+    "Answer Key URL": "https://github.com/Snowflake-Labs/builder-workshops/blob/main/gen-ai/data-intelligence.sql",
+    "Answer Key link text": "View Answer Key"
+  },
+  {
+    "Workshop": "Get Started with Snowflake CoCo Desktop",
+    "Guide URL": "https://www.snowflake.com/en/developers/guides/getting-started-with-coco-desktop/",
+    "Answer Key URL": "",
+    "Guide link text": "View Guide"
+  }
+]
