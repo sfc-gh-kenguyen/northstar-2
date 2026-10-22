@@ -1,0 +1,38 @@
+[
+  {
+    "event_name": "Hyderabad - CoCo Foundations: Getting Started with CoCo (10/24/2026)",
+    "nav_title": "Hyderabad — CoCo Foundations",
+    "page": "pages/7_Hyderabad_CoCo_Foundations.py",
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  },
+  {
+    "event_name": "Hyderabad - Data Ingestion, Transformation, and Delivery with Snowflake CoCo (10/24/2026)",
+    "nav_title": "Hyderabad — Data Engineering",
+    "page": "pages/8_Hyderabad_Data_Engineering.py",
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  },
+  {
+    "event_name": "Hyderabad - Building Intelligence Data Application with Snowflake CoWork (10/24/2026)",
+    "nav_title": "Hyderabad — CoWork",
+    "page": "pages/9_Hyderabad_CoWork.py",
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  },
+  {
+    "event_name": "Hyderabad - Creating Declarative Data Pipelines with Dynamic Tables (10/24/2026)",
+    "nav_title": "Hyderabad — Dynamic Tables",
+    "page": "pages/10_Hyderabad_Dynamic_Tables.py",
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  },
+  {
+    "event_name": "Hyderabad - Building AI Applications with Snowflake Cortex: RAG, Text-to-SQL & CoCo (10/24/2026)",
+    "nav_title": "Hyderabad — RAG & CoCo",
+    "page": "pages/11_Hyderabad_RAG.py",
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  },
+  {
+    "event_name": "Hyderabad - Build an End-to-End Application Using CoCo on Snowflake (10/24/2026)",
+    "nav_title": "Hyderabad — End-to-End App",
+    "page": "pages/12_Hyderabad_End_to_End.py",
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader."
+  }
+]
