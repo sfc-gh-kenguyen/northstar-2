@@ -1,0 +1,30 @@
+[
+  {
+    "event_name": "Expedition Day 2",
+    "nav_title": "(Day 2) Campaign Planning, Simplified: Build It with CoCo, Ask It with CoWork",
+    "page": "pages/5_Expedition_Day2.py",
+    "workshops": [
+      "Campaign Planning, Simplified: Build It with CoCo, Ask It with CoWork"
+    ],
+    "trial_events": [
+      "Expedition Day 2 (NOAM)",
+      "Expedition Day 2 (EMEA)",
+      "Expedition Day 2 (APJ)"
+    ],
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader. Pick the trial signup link for your region."
+  },
+  {
+    "event_name": "Expedition Day 3",
+    "nav_title": "(Day 3) Close Faster, Audit Smarter: Build It with CoCo, Ask It with CoWork",
+    "page": "pages/6_Expedition_Day3.py",
+    "workshops": [
+      "Close Faster, Audit Smarter: Build It with CoCo, Ask It with CoWork"
+    ],
+    "trial_events": [
+      "Expedition Day 3 (NOAM)",
+      "Expedition Day 3 (EMEA)",
+      "Expedition Day 3 (APJ)"
+    ],
+    "intro": "Follow the steps below in order. Use the same email for trial signup and the auto-grader. Pick the trial signup link for your region."
+  }
+]
